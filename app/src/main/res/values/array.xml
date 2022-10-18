@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu">
+        <item>@string/action_call</item>
+        <item>@string/action_sms</item>
+        <item>@string/action_save</item>
+        <item>@string/action_delete</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>@string/RealEstate</item>
+        <item>@string/Car</item>
+        <item>@string/Furniture</item>
+        <item>@string/Cellphone</item>
+        <item>@string/Electricity</item>
+        <item>@string/Other</item>
+    </string-array>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.refael.finalproject.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/from_right_in"
+            app:exitAnim="@anim/from_left_out"
+            app:popEnterAnim="@anim/from_left_in"
+            app:popExitAnim="@anim/from_right_out" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeActivity"
+            app:destination="@id/homeActivity"
+            app:enterAnim="@anim/from_right_in"
+            app:exitAnim="@anim/from_left_out"
+            app:popEnterAnim="@anim/from_left_in"
+            app:popExitAnim="@anim/from_right_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.refael.finalproject.ui.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_homeActivity"
+            app:destination="@id/homeActivity"
+            app:enterAnim="@anim/from_right_in"
+            app:exitAnim="@anim/from_left_out"
+            app:popEnterAnim="@anim/from_left_in"
+            app:popExitAnim="@anim/from_right_out"/>
+        <action
+            android:id="@+id/action_registerFragment_to_profileImageFragment"
+            app:destination="@id/profileImageFragment"
+            app:popUpTo="@id/my_nav"
+            app:enterAnim="@anim/from_right_in"
+            app:exitAnim="@anim/from_left_out"
+            app:popEnterAnim="@anim/from_left_in"
+            app:popExitAnim="@anim/from_right_out"/>
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/from_right_in"
+            app:exitAnim="@anim/from_left_out"
+            app:popEnterAnim="@anim/from_right_out"
+            app:popExitAnim="@anim/from_left_in" />
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.refael.finalproject.ui.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home"
+        app:enterAnim="@anim/from_right_in"
+        app:exitAnim="@anim/from_left_out"
+        app:popEnterAnim="@anim/from_left_in"
+        app:popExitAnim="@anim/from_right_out"/>
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.refael.finalproject.repository.AddTaskFragment"
+        android:label="fragment_add_task"
+        tools:layout="@layout/fragment_add_task"
+        >
+        <action
+            android:id="@+id/action_addTaskFragment_to_homeActivity"
+            app:destination="@id/homeActivity"
+            app:enterAnim="@anim/from_right_in"
+            app:exitAnim="@anim/from_left_out"
+            app:popEnterAnim="@anim/from_left_in"
+            app:popExitAnim="@anim/from_right_out"/>
+        <action
+            android:id="@+id/action_addTaskFragment_to_allTasksFragment"
+            app:destination="@id/allTasksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileImageFragment"
+        android:name="com.refael.finalproject.ui.register.ProfileImageFragment"
+        android:label="fragment_profile_image"
+        tools:layout="@layout/fragment_profile_image" >
+        <action
+            android:id="@+id/action_profileImageFragment_to_homeActivity"
+            app:destination="@id/homeActivity"
+            app:enterAnim="@anim/from_right_in"
+            app:exitAnim="@anim/from_left_out"
+            app:popEnterAnim="@anim/from_left_in"
+            app:popExitAnim="@anim/from_right_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/allTasksFragment"
+        android:name="com.refael.finalproject.all_tasks.AllTasksFragment"
+        android:label="fragment_all_tasks"
+        tools:layout="@layout/fragment_all_tasks" />
+</navigation>

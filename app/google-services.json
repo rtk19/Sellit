@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "122396870204",
+    "project_id": "finalproject-343c6",
+    "storage_bucket": "finalproject-343c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122396870204:android:1ec7ff1c5c3b3fd9a92539",
+        "android_client_info": {
+          "package_name": "com.refael.finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122396870204-esf7ci5mp0ktrndt9ri39vm5dlkt2fqd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr0IQ2x3-OhJYH8NkGwiV4BQBTOUO8g0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122396870204-esf7ci5mp0ktrndt9ri39vm5dlkt2fqd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
